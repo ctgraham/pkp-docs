@@ -1,9 +1,9 @@
 Introduction
 ============
 
-OJS and OCS are multilingual systems, allowing journals and conferences to publish in a variety of languages. The Public Knowledge Project aims to support English, French, Spanish and Portuguese translations for both OJS and OCS. In addition, translations of both software packages have been completed by the community, and we welcome contributions at any time.
+OJS, OCS, and OMP are multilingual systems, allowing journals and conferences to publish in a variety of languages. The Public Knowledge Project aims to support English, French, Spanish and Portuguese translations each application. In addition, translations of each software package has been completed by the community, and we welcome contributions at any time.
 
-All text you see in a typical fresh OxS interface has been abstracted from the system code, and has in fact been retrieved from one of a number of XML locale files. These files can be found in folders using appropriate ISO locale codes (the [Language Code Listing](http://www.loc.gov/standards/iso639-2/php/code_list.php) followed by the [Country Code Listing](http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm)), for example `en_US` for American English, or `pt_BR` for Brazilian Portuguese. This document will use `en_US` for its examples.
+All text you see in a typical fresh install has been abstracted from the system code, and has in fact been retrieved from one of a number of XML locale files. These files can be found in folders using appropriate ISO locale codes (the [Language Code Listing](http://www.loc.gov/standards/iso639-2/php/code_list.php) followed by the [Country Code Listing](http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm)), for example `en_US` for American English, or `pt_BR` for Brazilian Portuguese. This document will use `en_US` for its examples.
 
 These locale directories will typically have XML files containing lists of message keys written in them: these message keys and their corresponding values correspond to template lines in the system code itself. The following set of message keys are taken from `locale/en_US/locale.xml`:
 
@@ -37,7 +37,7 @@ missing that particular key, or doesn't exist on the system in the first
 place), the system will display the raw message key surrounded by hash
 marks: `##navigation.journalHelp##`
 
-If you ever see that kind of code on an OJS or OCS page, you know that
+If you ever see that kind of code on page, you know that
 the translation is incomplete. You can take a look at the section on
 translating to see how to complete it.
 
@@ -45,11 +45,14 @@ Checking Language Availability
 ==============================
 
 You are advised to first check which languages are available from your
-version of OCS or OJS. If the language you want isn't listed, then check
+version of OCS, OJS or OMP. If the language you want isn't listed, then check
 our website for availability.
 
 Checking Your Software for Available Languages
 ----------------------------------------------
+
+OJS 2.x
+-------
 
 The first place to check on language availability is from within the
 software installation itself.
@@ -106,24 +109,6 @@ relevant project page.
 -   [OJS Languages List](http://pkp.sfu.ca/ojs-languages)
 
 -   [OCS Languages List](http://pkp.sfu.ca/ocs-languages)
-
-Information is organized in a table, with the software version along the
-X axis and the list of languages on the Y axis. Clicking on a language
-name will take you to an individual language page, which will list the
-most recent contributors, and any other relevant information.
-
-All languages fall into the following categories:
-
--   **Complete:** either bundled with that particular version of OCS or
-    OJS, or are otherwise available for download from the list.
-
--   **Needs Updating:** these files may be included with the version you
-    are using (the table will indicate this) but incomplete for some
-    reason (they may be a version out of date but still relevant enough
-    to be useful; or they may not have been 100% translated in the first
-    place). If they are listed as not being included with the software
-    version you are using, you can contact the last known maintainers to
-    see if they have any recent files.
 
 If you don't see the language(s) you are looking for listed on either of
 these lists, please consider undertaking the translation yourself. If
