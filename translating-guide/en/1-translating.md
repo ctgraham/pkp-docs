@@ -51,8 +51,7 @@ our website for availability.
 Checking Your Software for Available Languages
 ----------------------------------------------
 
-OJS 2.x
--------
+### OJS/OCS 2.x
 
 The first place to check on language availability is from within the
 software installation itself.
@@ -65,8 +64,8 @@ administration page. This page has two main sections:
 -   Under <em>Language Settings</em> you will find a drop-down box for
     your Primary Locale: this sets the default language across the
     entire site; users will be presented with this language by default,
-    until they change their own language preference.\
-    \
+    until they change their own language preference.
+    
     You will also see a list of supported locales, with checkboxes next
     to them. The selected locales will be available for use by all
     journals hosted on the site, and will also appear in a language
@@ -75,19 +74,19 @@ administration page. This page has two main sections:
     language toggle menu will not appear and extended language settings
     will not be available to journals.
 -   Under Manage Locales you will find a list of installed locales, as
-    well as a list of new locales that haven't been installed.\
-    \
+    well as a list of new locales that haven't been installed.
+    
     Beside each installed locale you will see: a link to <em>reload
     locale</em>, useful if you have made any changes to any locale
     files; and a link to <em>uninstall locale</em>, which will not
     remove locale files from your server but will remove them from the
-    list of supported locales.\
-    \
+    list of supported locales.
+    
     At the very bottom, beside each locale that hasn't yet been
     installed, you will see a checkbox. To install a language, check the
     box next to its name and click <em>Install</em>. The page will
-    reload and the locale will appear under <em>Manage Locales</em>.\
-    \
+    reload and the locale will appear under <em>Manage Locales</em>.
+    
     If a language is listed as available and installed from the Site
     Administrator's <em>Languages</em> administration page, you will
     still have to enable it for your journal or conference for it to be
@@ -99,6 +98,33 @@ administration page. This page has two main sections:
     used journal- or conference-wide. If you enable more than one
     language, users will be able to toggle between them via a drop-down
     menu on the sidebar.
+
+### OJS/OMP 3.x
+
+-   If you have more than one context (journal or press) installed, the
+    Site Administrator controls what languages are available for to each
+    context.  Navigate to Administration, Settings, and Languages.  Installed
+    languages are listed here with an checkbox option to enable or disable
+    the language sitewide.
+    
+-   For each journal or press context, the Manager controls the settings within
+    that context by navigating to Settings, Website, and Languages.  Each language
+    can be enabled for the UI, for Forms, and for Submissions.
+    
+    -    UI: Controls the user interface languages available in the front-end and in
+         the back end.  Enabling a language for the UI will allow users to select the
+         language of the application interface.  For example, buttons, page titles,
+         and on-screen messages will be in the user's selected language.
+         
+    -    Forms: Controls the data entry forms for the application.  Enabling a language
+         for forms will allow text boxes to support multilingual data entry.  For
+         example, configuration settings and metadata can be entered in multiple
+         languages.
+         
+    -    Submissions: Controls what languages are accepted for submission of manuscripts
+         to the system.  Enabling a language for Submissions will allow the author to 
+         select that language as representing the uploaded submission document.
+         
 
 Checking the PKP Website for Available Languages
 ------------------------------------------------
@@ -148,12 +174,12 @@ installed by following these steps (You will require software such as
     newly-installed locale beside Supported Locales and click
     <em>Save</em>.
 
-You will then need to either visit each conference or journal you are
-administering and activate the language from the Journal/Conference
-Manager Language page. You can do this by checking the box beside
+You will then need to either visit each conference, journal, or 
+press you are administering and activate the language from the
+Language page. You can do this by checking the box beside
 Supported Locales and clicking <em>Save</em>.
 
-**Warning:** Visit your system information page
+**OJS/OCS 2.x Warning:** Visit your system information page
 (http://<your-site>/index.php/index/admin/systemInfo) and review your
 "registry\_dir" variable to be sure you are editing the right
 locales.xml
@@ -162,15 +188,9 @@ locales.xml
 Translation Managers
 ====================
 
-(explain translation managers)
-
-
-Translations by Application
-===========================
-
-You will find more information on translations, including contributors
-and translations notes, below. Contributors are encouraged to [contact
-us](mailto:pkp.contact@gmail.com) for login information to maintain
-their translation page.
-
-(link to wiki, list of applications' locales)
+Volunteer translation managers help PKP to keep translations up-to-date.
+These translation managers coordinate and review translations to ensure
+that terminology is used consistently within the application.  Note that
+these managers don't necessarily translate each application, but they do
+have oversight of the PKP application suite as a whole.  Please [contact
+us](http://pkp.sfu.ca/contact) to connect with a translation manager.
